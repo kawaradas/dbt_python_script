@@ -1,0 +1,198 @@
+
+
+============================== 2022-06-16 07:09:53.385538 | f2c6d6d9-15c2-43b7-b270-92f631b9d350 ==============================
+07:09:53.385538 [info ] [MainThread]: Running with dbt=1.1.0
+07:09:53.385538 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone2\\google_snow', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone2\\google_snow', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+07:09:53.385538 [debug] [MainThread]: Tracking: tracking
+07:09:53.385538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0C9227CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0C9227D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0C9227910>]}
+07:09:53.401141 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+07:09:53.416849 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+07:09:53.417811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f2c6d6d9-15c2-43b7-b270-92f631b9d350', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0C92299D0>]}
+07:09:53.465259 [debug] [MainThread]: Parsing macros\adapters.sql
+07:09:53.480880 [debug] [MainThread]: Parsing macros\catalog.sql
+07:09:53.480880 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+07:09:53.496511 [debug] [MainThread]: Parsing macros\materializations\merge.sql
+07:09:53.496511 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+07:09:53.496511 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+07:09:53.496511 [debug] [MainThread]: Parsing macros\materializations\table.sql
+07:09:53.496511 [debug] [MainThread]: Parsing macros\materializations\view.sql
+07:09:53.496511 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+07:09:53.512136 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+07:09:53.512136 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+07:09:53.512136 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+07:09:53.512136 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+07:09:53.512136 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+07:09:53.527757 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+07:09:53.527757 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+07:09:53.527757 [debug] [MainThread]: Parsing macros\etc\statement.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+07:09:53.543297 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+07:09:53.558924 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+07:09:53.558924 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+07:09:53.574550 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+07:09:53.574550 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+07:09:53.574550 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+07:09:53.590261 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+07:09:53.590261 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+07:09:53.590261 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+07:09:53.590261 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+07:09:53.590261 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+07:09:53.605987 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+07:09:53.605987 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+07:09:53.621612 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+07:09:53.621612 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+07:09:53.621612 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+07:09:53.637237 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+07:09:53.637237 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+07:09:53.637237 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+07:09:53.637237 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+07:09:53.637237 [debug] [MainThread]: Parsing macros\cross_db_utils\any_value.sql
+07:09:53.637237 [debug] [MainThread]: Parsing macros\cross_db_utils\bool_or.sql
+07:09:53.637237 [debug] [MainThread]: Parsing macros\cross_db_utils\cast_bool_to_text.sql
+07:09:53.652864 [debug] [MainThread]: Parsing macros\cross_db_utils\concat.sql
+07:09:53.652864 [debug] [MainThread]: Parsing macros\cross_db_utils\current_timestamp.sql
+07:09:53.652864 [debug] [MainThread]: Parsing macros\cross_db_utils\datatypes.sql
+07:09:53.652864 [debug] [MainThread]: Parsing macros\cross_db_utils\dateadd.sql
+07:09:53.652864 [debug] [MainThread]: Parsing macros\cross_db_utils\datediff.sql
+07:09:53.652864 [debug] [MainThread]: Parsing macros\cross_db_utils\date_trunc.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\escape_single_quotes.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\except.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\hash.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\identifier.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\intersect.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\last_day.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\length.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\literal.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\position.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\replace.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\right.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\safe_cast.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\split_part.sql
+07:09:53.668490 [debug] [MainThread]: Parsing macros\cross_db_utils\width_bucket.sql
+07:09:53.684113 [debug] [MainThread]: Parsing macros\cross_db_utils\_is_ephemeral.sql
+07:09:53.684113 [debug] [MainThread]: Parsing macros\cross_db_utils\_is_relation.sql
+07:09:53.684113 [debug] [MainThread]: Parsing macros\jinja_helpers\log_info.sql
+07:09:53.684113 [debug] [MainThread]: Parsing macros\jinja_helpers\pretty_log_format.sql
+07:09:53.684113 [debug] [MainThread]: Parsing macros\jinja_helpers\pretty_time.sql
+07:09:53.684113 [debug] [MainThread]: Parsing macros\jinja_helpers\slugify.sql
+07:09:53.684113 [debug] [MainThread]: Parsing macros\materializations\insert_by_period_materialization.sql
+07:09:53.699738 [debug] [MainThread]: Parsing macros\schema_tests\accepted_range.sql
+07:09:53.699738 [debug] [MainThread]: Parsing macros\schema_tests\at_least_one.sql
+07:09:53.699738 [debug] [MainThread]: Parsing macros\schema_tests\cardinality_equality.sql
+07:09:53.699738 [debug] [MainThread]: Parsing macros\schema_tests\equality.sql
+07:09:53.699738 [debug] [MainThread]: Parsing macros\schema_tests\equal_rowcount.sql
+07:09:53.699738 [debug] [MainThread]: Parsing macros\schema_tests\expression_is_true.sql
+07:09:53.715362 [debug] [MainThread]: Parsing macros\schema_tests\fewer_rows_than.sql
+07:09:53.715362 [debug] [MainThread]: Parsing macros\schema_tests\mutually_exclusive_ranges.sql
+07:09:53.715362 [debug] [MainThread]: Parsing macros\schema_tests\not_accepted_values.sql
+07:09:53.715362 [debug] [MainThread]: Parsing macros\schema_tests\not_constant.sql
+07:09:53.715362 [debug] [MainThread]: Parsing macros\schema_tests\not_null_proportion.sql
+07:09:53.726889 [debug] [MainThread]: Parsing macros\schema_tests\recency.sql
+07:09:53.727999 [debug] [MainThread]: Parsing macros\schema_tests\relationships_where.sql
+07:09:53.729105 [debug] [MainThread]: Parsing macros\schema_tests\sequential_values.sql
+07:09:53.730113 [debug] [MainThread]: Parsing macros\schema_tests\test_not_null_where.sql
+07:09:53.730113 [debug] [MainThread]: Parsing macros\schema_tests\test_unique_where.sql
+07:09:53.730113 [debug] [MainThread]: Parsing macros\schema_tests\unique_combination_of_columns.sql
+07:09:53.730113 [debug] [MainThread]: Parsing macros\sql\date_spine.sql
+07:09:53.730113 [debug] [MainThread]: Parsing macros\sql\generate_series.sql
+07:09:53.730113 [debug] [MainThread]: Parsing macros\sql\get_column_values.sql
+07:09:53.730113 [debug] [MainThread]: Parsing macros\sql\get_query_results_as_dict.sql
+07:09:53.745827 [debug] [MainThread]: Parsing macros\sql\get_relations_by_pattern.sql
+07:09:53.745827 [debug] [MainThread]: Parsing macros\sql\get_relations_by_prefix.sql
+07:09:53.745827 [debug] [MainThread]: Parsing macros\sql\get_tables_by_pattern_sql.sql
+07:09:53.745827 [debug] [MainThread]: Parsing macros\sql\get_tables_by_prefix_sql.sql
+07:09:53.745827 [debug] [MainThread]: Parsing macros\sql\get_table_types_sql.sql
+07:09:53.745827 [debug] [MainThread]: Parsing macros\sql\groupby.sql
+07:09:53.745827 [debug] [MainThread]: Parsing macros\sql\haversine_distance.sql
+07:09:53.745827 [debug] [MainThread]: Parsing macros\sql\nullcheck.sql
+07:09:53.761623 [debug] [MainThread]: Parsing macros\sql\nullcheck_table.sql
+07:09:53.761623 [debug] [MainThread]: Parsing macros\sql\pivot.sql
+07:09:53.761623 [debug] [MainThread]: Parsing macros\sql\safe_add.sql
+07:09:53.761623 [debug] [MainThread]: Parsing macros\sql\star.sql
+07:09:53.761623 [debug] [MainThread]: Parsing macros\sql\surrogate_key.sql
+07:09:53.761623 [debug] [MainThread]: Parsing macros\sql\union.sql
+07:09:53.777317 [debug] [MainThread]: Parsing macros\sql\unpivot.sql
+07:09:53.777317 [debug] [MainThread]: Parsing macros\web\get_url_host.sql
+07:09:53.777317 [debug] [MainThread]: Parsing macros\web\get_url_parameter.sql
+07:09:53.777317 [debug] [MainThread]: Parsing macros\web\get_url_path.sql
+07:09:54.012256 [debug] [MainThread]: 1699: static parser successfully parsed f_app_master_1.sql
+07:09:54.059133 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.google_snow.example
+
+07:09:54.059133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f2c6d6d9-15c2-43b7-b270-92f631b9d350', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0C94A7F40>]}
+07:09:54.059133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f2c6d6d9-15c2-43b7-b270-92f631b9d350', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0C9260070>]}
+07:09:54.059133 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 383 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+07:09:54.059133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2c6d6d9-15c2-43b7-b270-92f631b9d350', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0C9207CD0>]}
+07:09:54.059133 [info ] [MainThread]: 
+07:09:54.059133 [debug] [MainThread]: Acquiring new snowflake connection "master"
+07:09:54.074752 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+07:09:54.074752 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+07:09:54.074752 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "google_snow", "target_name": "dev", "connection_name": "list_AIRBYTE_DATABASE"} */
+
+    show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+07:09:54.074752 [debug] [ThreadPool]: Opening a new connection, currently in state init
+07:09:54.735261 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.66 seconds
+07:09:54.735261 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+07:09:54.938291 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+07:09:54.946861 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+07:09:54.946861 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "google_snow", "target_name": "dev", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+
+    show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+07:09:54.946861 [debug] [ThreadPool]: Opening a new connection, currently in state init
+07:09:55.212172 [debug] [ThreadPool]: SQL status: SUCCESS 23 in 0.27 seconds
+07:09:55.212172 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+07:09:55.337203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2c6d6d9-15c2-43b7-b270-92f631b9d350', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0CA5F36A0>]}
+07:09:55.337203 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+07:09:55.337203 [info ] [MainThread]: 
+07:09:55.352683 [debug] [Thread-1  ]: Began running node model.google_snow.f_app_master_1
+07:09:55.352683 [info ] [Thread-1  ]: 1 of 1 START table model AIRBYTE_SCHEMA.f_app_master_1 ......................... [RUN]
+07:09:55.352683 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.google_snow.f_app_master_1"
+07:09:55.352683 [debug] [Thread-1  ]: Began compiling node model.google_snow.f_app_master_1
+07:09:55.352683 [debug] [Thread-1  ]: Compiling model.google_snow.f_app_master_1
+07:09:55.352683 [debug] [Thread-1  ]: Writing injected SQL for node "model.google_snow.f_app_master_1"
+07:09:55.352683 [debug] [Thread-1  ]: finished collecting timing info
+07:09:55.352683 [debug] [Thread-1  ]: Began executing node model.google_snow.f_app_master_1
+07:09:55.401759 [debug] [Thread-1  ]: Writing runtime SQL for node "model.google_snow.f_app_master_1"
+07:09:55.401759 [debug] [Thread-1  ]: Using snowflake connection "model.google_snow.f_app_master_1"
+07:09:55.401759 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "google_snow", "target_name": "dev", "node_id": "model.google_snow.f_app_master_1"} */
+
+
+      create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.f_app_master_1  as
+      (
+
+
+select
+ *
+from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."____33_"
+where SYS_UPDATED_ON <= '2021-10-13 05:33:49.000'
+      );
+07:09:55.401759 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+07:09:58.315477 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.91 seconds
+07:09:58.315477 [debug] [Thread-1  ]: finished collecting timing info
+07:09:58.315477 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: Close
+07:09:58.409818 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f2c6d6d9-15c2-43b7-b270-92f631b9d350', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0CA602280>]}
+07:09:58.409818 [info ] [Thread-1  ]: 1 of 1 OK created table model AIRBYTE_SCHEMA.f_app_master_1 .................... [[32mSUCCESS 1[0m in 3.06s]
+07:09:58.409818 [debug] [Thread-1  ]: Finished running node model.google_snow.f_app_master_1
+07:09:58.409818 [debug] [MainThread]: Acquiring new snowflake connection "master"
+07:09:58.409818 [info ] [MainThread]: 
+07:09:58.409818 [info ] [MainThread]: Finished running 1 table model in 4.35s.
+07:09:58.409818 [debug] [MainThread]: Connection 'master' was properly closed.
+07:09:58.409818 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE' was properly closed.
+07:09:58.409818 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+07:09:58.409818 [debug] [MainThread]: Connection 'model.google_snow.f_app_master_1' was properly closed.
+07:09:58.425364 [info ] [MainThread]: 
+07:09:58.425364 [info ] [MainThread]: [32mCompleted successfully[0m
+07:09:58.425364 [info ] [MainThread]: 
+07:09:58.433826 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+07:09:58.433826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0CA63B7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0CA63B580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0CA63B2E0>]}
